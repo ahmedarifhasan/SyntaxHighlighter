@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CodePaste</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+    <script src="./csyn.js"></script>
+    <script>
+        function testf(text)
+        {
+            console.log(text.innerHTML + "\n\n**from Test Function" );     
+        }
+    </script>
+</head>
+<body style="font-family: monospace; font-size: 13.4px;">
+    <div>
+        <nav class="navbar navbar-light">
+            <a class="navbar-brand" href="#">CodePaste</a>
+            <ul class="navbar-nav">
+            </ul>
+        </nav>
+    </div>
+
+    
+    <form action="/" method="post">
+     <textarea id="code_" autofocus="autofocus"   name="code" cols="200" rows="30" style="outline-width: 0.000ch; border-width: 0ch; margin-left: 15px">
+     </textarea>
+    <button style="margin-left: 15px;" name="send" onclick="testf(this)" class="btn btn-secondary">Send</button>
+    </form>
+
+
+
+<br>
+<br>  
+</body>
+</html>
